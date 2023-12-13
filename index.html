@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="mydiv">
+
+
+
+    </div>
+    <script type="text/babel">
+        const Hello = () => {
+            return <h1>Hello World!</h1>;
+        }
+
+        const OrderConfirmationText = () => {
+            const typeOfCoffee = 'Arabicabönor';
+            const amount = 0.1; //kg
+            return <p>Tack för din beställning av {amount * 1000} gram {typeOfCoffee}</p>
+        }
+
+        const List = () => {
+            return (
+                <>
+                    <span>Jonatan</span>
+                    <span>Anna</span>
+                    <span>Erika</span>
+                </>
+            )
+        }
+
+        ReactDOM.render(<List />, document.getElementById('mydiv'))
+
+    </script>
+</body>
+
+</html>
